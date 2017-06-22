@@ -1,11 +1,14 @@
 !!!
 %html
 %head
-  %title Wiki
+  %title WikiSystem
   = csrf_meta_tags
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %link href: "//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
 %body
+  = render 'layouts/navbar'
+
   %p.notice= notice
   %p.alert= alert
 
@@ -15,7 +18,6 @@
         = yield
       .col-md-4
         %ul
-          %li= link_to "All Articles", root_path
+          %li= link_to "All Articles", root_path, class: "list-group-item"
           - Category.all.each do |category|
-            %li= link_to category.name, articles_path(category: category.name)
-  
+            %li= link_to category.name, articles_path(category: category.name), class: "list-group-item"
