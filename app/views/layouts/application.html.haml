@@ -7,11 +7,15 @@
   = javascript_include_tag 'application'
   %link href: "//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
 %body
+
+
   = render 'layouts/navbar'
+
+    
 
   %p.notice= notice
   %p.alert= alert
-
+  = bootstrap_flash
   .container
     .row
       .col-md-8 
