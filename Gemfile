@@ -31,7 +31,7 @@ gem 'devise', '~> 4.3'
 gem 'simple_form', '~> 3.5'
 gem 'hirb', '~> 0.7.3'
 gem 'haml', '~> 5.0', '>= 5.0.1'
-gem 'turbolinks', '~> 5.0'
+
 
 
 
