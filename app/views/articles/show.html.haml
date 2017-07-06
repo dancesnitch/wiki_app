@@ -1,5 +1,7 @@
 %h1= @article.title
-%p= @article.content
+%pre
+	%code.language-ruby
+		%p= @article.content 
 
 .btn-group
 = link_to "Back", root_path, class: "btn btn-default"
