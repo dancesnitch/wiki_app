@@ -1,3 +1,7 @@
 class Category < ApplicationRecord
 	has_many :articles
-end
+
+	def self.search(search)
+  	where("category_id LIKE ?", "%#{search}%") 
+	end
+end	 

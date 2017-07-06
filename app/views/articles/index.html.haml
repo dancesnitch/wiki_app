@@ -5,3 +5,8 @@
 		Published at
 		= article.created_at .strftime('%b %d, %Y')
 	%p= truncate(article.content, length: 200)
+
+- if @articles.blank?
+	%h4
+	There are no articles containing the term #{params[:search]}.
+

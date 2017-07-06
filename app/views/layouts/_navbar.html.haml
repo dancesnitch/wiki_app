@@ -13,9 +13,12 @@
 			%ul.nav.navbar-nav
 
 			%ul.navbar-form.navbar-right
-				.form-group
-					%input.form-control{:placeholder => "Search", :type => "text"}/
-				%button.btn.btn-default{:type => "submit"} Submit
+				.input-group
+					= form_tag(articles_path, :method => "get", id: "search-form") do
+						= text_field_tag :search, params[:search], placeholder: "Search Articles", class: 'form-control'
+						%span.input-group-btn
+							= submit_tag "Search", class: 'btn btn-default'
+
 
 
 			%ul.nav.navbar-nav.navbar-right
