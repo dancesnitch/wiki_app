@@ -1,26 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Wiki Systems Application:
 
-Things you may want to cover:
+This application was created using:
 
-* Ruby version
+Ruby 2.3.1
+Rails 5.1.2
 
-* System dependencies
+Run Development:
 
-* Configuration
+command line: $ rails s
 
-* Database creation
+Running on --> http://localhost:3000
 
-* Database initialization
 
-* How to run the test suite
+Run Production:
 
-* Services (job queues, cache servers, search engines, etc.)
+http://wikisystem.herokuapp.com
 
-* Deployment instructions
 
-* ...
-# wiki_app
-# wiki_app
